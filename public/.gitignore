@@ -1,0 +1,50 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux system files
+.directory
+.Trash-*
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~
+.*.sw?
+\#*\#
+
+# Editor and IDE settings
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+
+# Dependencies (if you add a build step later)
+node_modules/

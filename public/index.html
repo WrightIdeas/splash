@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Character set & viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- Primary SEO -->
+  <title>Website Design, Branding, SEO, and Web Development for Small and Medium Businesses | Wright Ideas</title>
+  <meta name="description" content="Let’s talk about your project, your goals, and how we can help you get there. If you have a small task, a full system overhaul, or something in-between, I can help you bring your ideas to life." />
+  <meta name="keywords" content="contact, wrightideas, get in touch, small business, mid-sized, consultation" />
+  <meta name="author" content="Wright Ideas" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="theme-color" content="#FBBE0D" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="canonical" href="https://www.wrightideas.org/" />
+
+  <!-- Favicon & app icons -->
+  <link rel="icon" href="/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wright Ideas" />
+  <meta property="og:title" content="Website Design, Branding, SEO, and Web Development for Small and Medium Businesses | Wright Ideas" />
+  <meta property="og:description" content="Let’s talk about your project, your goals, and how we can help you get there. If you have a small task, a full system overhaul, or something in-between, I can help you bring your ideas to life." />
+  <meta property="og:url" content="https://www.wrightideas.org/" />
+  <meta property="og:image" content="https://www.wrightideas.org/assets/wrightideas-og.png" />
+  <meta property="og:image:alt" content="Wright Ideas — How can I help you bring your ideas to life?" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Website Design, Branding, SEO, and Web Development for Small and Medium Businesses | Wright Ideas" />
+  <meta name="twitter:description" content="Let’s talk about your project, your goals, and how we can help you get there. If you have a small task, a full system overhaul, or something in-between, I can help you bring your ideas to life." />
+  <meta name="twitter:image" content="https://www.wrightideas.org/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Wright Ideas — How can I help you bring your ideas to life?" />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Website Design, Branding, SEO, and Web Development for Small and Medium Businesses | Wright Ideas",
+    "url": "https://www.wrightideas.org/",
+    "description": "Let’s talk about your project, your goals, and how we can help you get there. If you have a small task, a full system overhaul, or something in-between, I can help you bring your ideas to life.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Wright Ideas",
+      "url": "https://www.wrightideas.org/"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Wright Ideas",
+      "url": "https://www.wrightideas.org/"
+      "logo": "https://www.wrightideas.org/assets/logos/wrightideas-splash.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "hello@wrightideas.org",
+        "availableLanguage": "English"
+      }
+    }
+  }
+  </script>
+
+  <!-- Apply saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) { /* storage unavailable */ }
+    })();
+  </script>
+
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =========================================================
+       THEME TOKENS
+       Change these variables to re-theme the whole page.
+       ========================================================= */
+    :root {
+      /* Light theme (default) */
+      --color-bg: #FBBE0D;
+      --color-text: #845415;
+      --color-button-bg: #1F1405;
+      --color-button-text: #FBBE0D;
+      --color-button-hover: #6B4210;
+      --color-focus: #845415;
+      --color-toggle-bg: rgba(132, 84, 21, 0.12);
+
+      --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --transition-speed: 300ms;
+
+      color-scheme: light;
+    }
+
+    /* Dark theme */
+    [data-theme="dark"] {
+      --color-bg: #1F1405;
+      --color-text: #FBBE0D;
+      --color-button-bg: #FBBE0D;
+      --color-button-text: #1F1405;
+      --color-button-hover: #FFD15C;
+      --color-focus: #FBBE0D;
+      --color-toggle-bg: rgba(251, 190, 13, 0.15);
+
+      color-scheme: dark;
+    }
+
+    /* =========================================================
+       BASE
+       ========================================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      transition:
+        background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+    }
+
+    /* =========================================================
+       SPLASH LAYOUT (full screen)
+       ========================================================= */
+    .splash {
+      position: relative;
+      min-height: 100vh;
+      min-height: 95dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 2rem;
+      padding:
+        max(1.5rem, env(safe-area-inset-top))
+        max(1.5rem, env(safe-area-inset-right))
+        max(1.5rem, env(safe-area-inset-bottom))
+        max(1.5rem, env(safe-area-inset-left));
+      text-align: center;
+    }
+
+    /* Theme toggle, upper-right corner */
+    .theme-toggle {
+      position: absolute;
+      top: max(1.25rem, env(safe-area-inset-top));
+      right: max(1.25rem, env(safe-area-inset-right));
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 50%;
+      background: var(--color-toggle-bg);
+      color: var(--color-text);
+      cursor: pointer;
+      transition: background-color var(--transition-speed) ease, transform 150ms ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.05);
+    }
+
+    .theme-toggle:focus-visible,
+    .btn:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    .theme-toggle svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Show the moon in light mode (switch to dark), the sun in dark mode */
+    .theme-toggle .icon-sun { display: none; }
+    .theme-toggle .icon-moon { display: block; }
+    [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+    [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+    /* Logo */
+    .logo {
+      display: block;
+      width: min(380px, 50vw);
+      height: auto;
+    }
+
+    /* Headline */
+    .headline {
+      margin: 0;
+      font-size: clamp(1.75rem, 4vw + 1rem, 3.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .subheadline {
+      margin: 0;
+      max-width: 42ch;
+      font-size: clamp(1rem, 1vw + 0.9rem, 1.25rem);
+      font-weight: 400;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+
+    /* dotLottie animation */
+    .animation {
+      width: min(320px, 70vw);
+      height: auto;
+      aspect-ratio: 5 / 1;
+    }
+
+    /* Let’s Talk button */
+    .btn {
+      display: inline-block;
+      padding: 0.95rem 2.5rem;
+      border: none;
+      border-radius: 999px;
+      font-family: var(--font-family);
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      background: var(--color-button-bg);
+      color: var(--color-button-text);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      transition:
+        background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease,
+        transform 150ms ease,
+        box-shadow 150ms ease;
+    }
+
+    .btn:hover {
+      background: var(--color-button-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .cta-group {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 1rem;
+     }
+
+     .btn-outline {
+       background: transparent;
+       color: var(--color-text);
+       border: 2px solid var(--color-text);
+       box-shadow: none;
+     }
+
+     .btn-outline:hover {
+       background: var(--color-toggle-bg);
+       color: var(--color-text);
+       box-shadow: none;
+       transform: translateY(-2px);
+     }
+
+     /* Footer: copyright and privacy row */
+    .site-footer {
+        position: absolute;
+        bottom: max(1rem, env(safe-area-inset-bottom));
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem 1.25rem;
+        padding: 0 1.5rem;
+        font-size: 0.85rem;
+        opacity: 0.8;
+    }
+
+    .site-footer a {
+        color: inherit;
+        text-underline-offset: 3px;
+    }
+
+    .site-footer a:hover {
+        opacity: 1;
+    }
+
+    .site-footer a:focus-visible {
+        outline: 3px solid var(--color-focus);
+        outline-offset: 3px;
+        border-radius: 2px;
+    }
+
+    /* Respect reduced-motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0ms !important;
+        animation-duration: 0ms !important;
+      }
+    }
+
+    /* Small screens: tighten spacing */
+    @media (max-height: 640px) {
+      .splash { gap: 1.25rem; }
+      .animation { width: min(200px, 50vw); }
+    }
+  </style>
+
+  <!-- dotLottie web component (pinned version) -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"></script>
+</head>
+
+<body>
+  <main class="splash">
+
+    <!-- Dark mode toggle -->
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      type="button"
+      aria-label="Toggle dark mode"
+      aria-pressed="false"
+      title="Toggle dark mode">
+      <!-- Moon icon (shown in light mode) -->
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <!-- Sun icon (shown in dark mode) -->
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+      </svg>
+    </button>
+
+    <!-- dotLottie animation -->
+    <dotlottie-wc
+      class="animation"
+      src="/assets/lottie/search.lottie"
+      autoplay
+      loop
+      aria-hidden="true">
+    </dotlottie-wc>
+
+     <!--Logo (hosted on CDN) -->
+     <img
+        class="logo"
+        src="/assets/logos/wrightideas-splash.svg"
+        alt="Wright Ideas LLC"
+        width="380"
+        height="68"
+        decoding="async"
+        fetchpriority="high" />
+
+
+    <h1 class="headline" hidden>Let’s build something together.</h1>
+    <p class="subheadline">Expertise in web design, development, and total site optimization to market and grow your business.</p>
+
+
+
+    <!-- Call to action -->
+    <div class="cta-group">
+        <a class="btn btn-outline" href="/portfolio">View Portfolio</a>
+        <a class="btn" href="https://www.cognitoforms.com/WrightIdeasLLC/WebDesignProjectInquiry">Let’s Talk</a>
+    </div>
+
+    <footer class="site-footer">
+        <span>&copy; <span id="copyright-year">2026</span> Wright Ideas LLC. All rights reserved.</span>
+    </footer>
+
+  </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById('theme-toggle');
+      var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+      function applyTheme(mode) {
+        root.setAttribute('data-theme', mode);
+        toggle.setAttribute('aria-pressed', mode === 'dark' ? 'true' : 'false');
+
+        // Swap logo to match the theme
+        var logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = mode === 'dark'
+            ? '/assets/logos/wrightideas-splash-dark.svg'
+            : '/assets/logos/wrightideas-splash.svg';
+        }
+
+        // Keep the browser UI color in sync with the background variable
+        if (themeColorMeta) {
+          themeColorMeta.setAttribute(
+            'content',
+            getComputedStyle(root).getPropertyValue('--color-bg').trim()
+          );
+        }
+
+        try { localStorage.setItem('theme', mode); } catch (e) { /* storage unavailable */ }
+      }
+
+      // Sync initial state with whatever the head script applied
+      applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+
+      toggle.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      });
+
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
